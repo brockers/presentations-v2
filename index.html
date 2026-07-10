@@ -29,13 +29,22 @@
         font-size: 0.75em;
         margin: 20px auto;
       }
+    .reveal ul {
+      font-size: 0.7em; /* Adjust percentage or em as needed */
+    }
+    .reveal.reveal img {
+        border: none;
+        box-shadow: none;
+        max-height: calc(56vh);
+        max-width: calc(66vw);
+    }
     </style>
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
 				<section>
-					<h2><img src="images/asg_logo.png" style="box-shadow:none; border:none; background:none"></h2>
+        <img src="images/asg_logo.png">
 				</section>
 
 				<section>
@@ -45,15 +54,16 @@
 
 				<section>
 					<h5>Vibe Coding <small>Version 1</small></h5>
-					<h2><img src="images/claude-v1.png" style="box-shadow:none; border:none; background:none"></h2>
+          <img src="images/claude-v1.2.png">
 				</section>
 
 				<section>
 					<h5>The Good  <small>Version 1</small></h5>
           <ul>
             <li>Automate repetitive tasks</li>
-            <li>Large scale templating functionality</li>
+            <li>Effectively eliminates boilerplate coding</li>
             <li>Easy to get summarized context</li>
+            <li>Like pair-programming with stack-exchange/Google</li>
           </ul>
         </section>
 
@@ -61,14 +71,15 @@
           <h5>The Bad  <small>Version 1</small></h5>
           <ul>
             <li>Worker "just does something"</li>
-            <li>Buggy/inconsistent code</li>
+            <li>Absence of any business knowledge you don't provide</li>
+            <li>Inconsistent code</li>
             <li>Long Run Sessions hallucinate</li>
           </ul>
 				</section>
 
 				<section>
 					<h5>PRD Workflow <small>Version 2</small></h5>
-					<h2><img src="images/claude-v2.png" style="box-shadow:none; border:none; background:none"></h2>
+          <img src="images/claude-v2.png">
 				</section>
 
 				<section>
@@ -77,6 +88,7 @@
             <li>Prompt Engineering defined process</li>
             <li>Better, more consistent results</li>
             <li>More likely to actually build what you want</li>
+            <li>Incorporates deep technical engineering skills</li>
           </ul>
         </section>
 
@@ -93,7 +105,7 @@
 
 				<section>
 					<h5>ASG Workflow <small>version 3</small></h5>
-					<h2><img src="images/claude-v3.png" style="box-shadow:none; border:none; background:none"></h2>
+          <img src="images/claude-v3.png">
 				</section>
 
 				<section>
@@ -101,7 +113,7 @@
           <ul>
             <li>Follows & Automates OUR workflow</li>
             <li>Automated Cross-LLM AI Review</li>
-            <li>Context Driven at each stage</li>
+            <li>Context Driven from task descriptions, allowing PMs to better scope</li>
             <li>Significant use of scripting for deterministic tasks</li>
             <li>Scripting allows for use outside of Claude</li>
           </ul>
@@ -110,40 +122,54 @@
         <section>
           <h5>The Bad <small>version 3</small></h5>
           <ul>
-            <li>Onerous for defining PRD requirements on the creator of the task</li>
+            <li>Onerous is on defining PRD requirements by the creator of the task</li>
             <li>AI still only has the context you've given it</li>
             <li>Agent Experts run with legacy context</li>
             <li>Agent Experts are inferred instead of defined</li>
-            <li>No built-in mechanism for continual agent improvement</li>
+            <li>No built-in mechanism for continual agent improvement/learning</li>
           </ul>
 				</section>
 
 				<section>
 					<h5>ASG Ralph Workflow <small>version 4</small></h5>
-					<h2><img src="images/claude-v3.png" style="box-shadow:none; border:none; background:none"></h2>
+          <img src="images/claude-v4.png">
 				</section>
 
 				<section>
 					<h5>Improvements</h5>
           <ul>
+            <li>Doesn't replace existing workflow, instead its extends and adds to it</li>
             <li>PRD like context, BUT inside our existing workflow</li>
             <li>AI Prompts for deep understanding and clarity</li>
             <li>Skill Specific AI Agents</li>
             <li>Full scripted unattended development</li>
             <li>Model continually learns/improves itself via guardrails & proposals</li>
+            <li>Claude commands, and their scripts, are now a plugin for ANY project</li>
           </ul>
         </section>
 
         <section>
           <h5>New Commands</h5>
           <ul>
-            <li>/grill-me: Claude command to make Claude ask questions where is lacks clarity.</li>
-            <li>/branch-ralph: /branch but will automatically pull the selected task into the ralph loop.</li>
-            <li>/create-ralph: Generates the ralph.sh script and prd.json file for autonomous development</li>
-            <li>Agent Experts are inferred instead of defined</li>
-            <li>No built-in mechanism for continual agent improvement</li>
+            <li>/ralph:branch - Like /branch but also creates the Ralph spec file</li>
+            <li>/ralph:create-prd - Creates prd.json file from the spec file</li>
+            <li>npm run ralph - Script that runs the autonmous ralph loop </li>
+            <li>/ralph:grilling - Used by create-prd for deep context understanding</li>
+            <li>/ralph:archive - Used to cleanup/archive the temporary .ralph/ files </li>
+            <li>OTHER: monitoring, creating spec files, setup a project with ralph etc...</li>
           </ul>
 				</section>
+
+        <section>
+          <h5>Changes</h5>
+          <ul>
+            <li>/branch → /asg:branch</li>
+            <li>/commit → /asg:commit</li>
+            <li>/review-pr → /asg:review-pr</li>
+            <li>/review-ai → /asg:review-ai</li>
+          </ul>
+				</section>
+
 				<section>
 					<h3><img src="images/asg_logo.png" style="box-shadow:none; border:none; background:none" width="400"></h3>
 					<small>Phone: <a href="https://www.linkedin.com/in/brockers">405.339-2292</a></small>

@@ -38,6 +38,10 @@
         max-height: calc(56vh);
         max-width: calc(66vw);
     }
+    .reveal pre code {
+      font-size: 0.5em; /* Reduces size to 70% of the default root size */
+      line-height: 1.0; /* Tighter lines for smaller text */
+    }
     </style>
 	</head>
 	<body>
@@ -48,133 +52,132 @@
 				</section>
 
 				<section>
-					<h5>AI Assisted Development Progression at ASG</h5>
-					<blockquote>The first rule of any technology used in a business is that automation applied to an efficient operation will magnify the efficiency. The second is that automation applied to an inefficient operation will magnify the inefficiency.<br>--Bill Gates</blockquote>
+					<h5>Unix, a History</h5>
+					<blockquote>A complex system that works is invariably found to have evolved from a simple system that works. The inverse proposition also appears to be true: A complex system designed from scratch never works and cannot be made to work.<br /> --John Gall</blockquote>
 				</section>
 
 				<section>
-					<h5>Vibe Coding <small>Version 1</small></h5>
-          <img src="images/claude-v1.2.png">
-				</section>
-
-				<section>
-					<h5>The Good  <small>Version 1</small></h5>
+					<h5>Philosophy</h5>
           <ul>
-            <li>Automate repetitive tasks</li>
-            <li>Effectively eliminates boilerplate coding</li>
-            <li>Easy to get summarized context</li>
-            <li>Like pair-programming with stack-exchange/Google</li>
+            <li>Do ONE thing, and do it well</li>
+            <li>Make things easy for developers, let the computer do the hard things</li>
+            <li>Text is KING</li>
+            <li>Expect the output of anything to be the input of everything</li>
+            <li>Default interactive, but don't expect it</li>
+          </ul>
+				</section>
+
+				<section>
+					<h5>Bash Basics</h5>
+          <ul>
+            <li>appName -s --long argument thing (i.e. verb --adverb --adjective noun)</li>
+            <li>Smart Defaults</li>
+            <li>man/help</li>
           </ul>
         </section>
 
         <section>
-          <h5>The Bad  <small>Version 1</small></h5>
+          <h5>Daily Usage</h5>
           <ul>
-            <li>Worker "just does something"</li>
-            <li>Absence of any business knowledge you don't provide</li>
-            <li>Inconsistent code</li>
-            <li>Long Run Sessions hallucinate</li>
+            <li>Command Completion/TAB</li>
+            <li>History/CTRL+r</li>
+            <li>ALT+.</li>
+            <li>Clear/CTRL+l</li>
+            <li>Cancel/CTRL+c</li>
           </ul>
 				</section>
 
 				<section>
-					<h5>PRD Workflow <small>Version 2</small></h5>
-          <img src="images/claude-v2.png">
+					<h5>Structure</h5>
+          <ul>
+            <li>stdin</li>
+            <li>stdout</li>
+            <li>stderr</li>
+          </ul>
+
 				</section>
 
 				<section>
-					<h5>The Good <small>version 2</small></h5>
+					<h5>Filesystem Basics</h5>
           <ul>
-            <li>Prompt Engineering defined process</li>
-            <li>Better, more consistent results</li>
-            <li>More likely to actually build what you want</li>
-            <li>Incorporates deep technical engineering skills</li>
+            <li>Hidden Files & Config Files</li>
+            <li>Permissions</li>
+            <li>chmod +x </li>
           </ul>
         </section>
 
         <section>
-          <h5>The Bad <small>Version 2</small></h5>
+          <h5>Software</h5>
           <ul>
-            <li>Workflow is outside our normal SCRUM workflow</li>
-            <li>Adoption was generally poor because of the workflow</li>
-            <li>Automation is all Claude based, no scripting</li>
-            <li>Uses LOTS of tokens, and sub agents, inefficiently</li>
-            <li>/prp-build is language specific</li>
+            <li>sudo and su</li>
+            <li>dnf/apt</li>
+            <li>Adding Repos</li>
           </ul>
 				</section>
 
 				<section>
-					<h5>ASG Workflow <small>version 3</small></h5>
-          <img src="images/claude-v3.png">
+					<h5>Automation</h5>
+          <ul>
+            <li>scripting</li>
+            <li>stow</li>
+          </ul>
 				</section>
 
 				<section>
-					<h5>The Good <small>version 3</small></h5>
+					<h5>Git</h5>
           <ul>
-            <li>Follows & Automates OUR workflow</li>
-            <li>Automated Cross-LLM AI Review</li>
-            <li>Context Driven from task descriptions, allowing PMs to better scope</li>
-            <li>Significant use of scripting for deterministic tasks</li>
-            <li>Scripting allows for use outside of Claude</li>
+            <li>rebasing</li>
+            <li>tig</li>
           </ul>
         </section>
 
-        <section>
-          <h5>The Bad <small>version 3</small></h5>
-          <ul>
-            <li>Onerous is on defining PRD requirements by the creator of the task</li>
-            <li>AI still only has the context you've given it</li>
-            <li>Agent Experts run with legacy context</li>
-            <li>Agent Experts are inferred instead of defined</li>
-            <li>No built-in mechanism for continual agent improvement/learning</li>
-          </ul>
-				</section>
-
 				<section>
-					<h5>ASG Ralph Workflow <small>version 4</small></h5>
-          <img src="images/claude-v4.png">
-				</section>
+					<h5>Common Linux Commands</h5>
+          <pre><code class="language-markdown" data-trim>
 
-				<section>
-					<h5>Ralph Process Loop</h5>
-          <img src="images/ralph-process-loop.png">
-				</section>
+          ### Getting around
 
-				<section>
-					<h5>Improvements</h5>
-          <ul>
-            <li>Doesn't replace existing workflow, instead its extends and adds to it</li>
-            <li>PRD like context, BUT inside our existing workflow</li>
-            <li>AI Prompts for deep understanding and clarity</li>
-            <li>Skill Specific AI Agents</li>
-            <li>Full scripted unattended development</li>
-            <li>Model continually learns/improves itself via guardrails & proposals</li>
-            <li>Claude commands, and their scripts, are now a plugin for ANY project</li>
-          </ul>
+          * ls
+          * cd
+          * pwd
+          * users
+          * groups
+          * su
+
+          ### Getting help
+
+          * man
+          * info
+          * --help
+
+          ### Adding, removing, moving
+
+          * mv
+          * cp
+          * rm
+          * mkdir
+
+          ### File Permissions & Ownership
+
+          * chmod
+          * chown
+          * chgrp
+
+          ### Vi (How to Escape)
+
+          * Esc Esc :q!
+
+          ### Other Stuff
+
+          * find
+          * grep
+          * cat
+          * less
+          * ps
+          * top
+          * cal
+          </code></pre>
         </section>
-
-        <section>
-          <h5>New Commands</h5>
-          <ul>
-            <li>/ralph:branch - Like /branch but also creates the Ralph spec file</li>
-            <li>/ralph:create-prd - Creates prd.json file from the spec file</li>
-            <li>npm run ralph - Script that runs the autonmous ralph loop </li>
-            <li>npm run ralph:archive - Cleanup temporary/old Ralph files </li>
-            <li>npm run ralph:update - Update project Ralph files after plugin update</li>
-            <li>/ralph:grilling - Used by create-prd for deep context understanding</li>
-            <li>OTHER: monitoring, creating spec files, setup a project with ralph etc...</li>
-          </ul>
-				</section>
-
-        <section>
-          <h5>Changes</h5>
-          <ul>
-            <li>/branch → /asg:branch</li>
-            <li>/commit → /asg:commit</li>
-            <li>/review-pr → /asg:review-pr</li>
-            <li>/review-ai → /asg:review-ai</li>
-          </ul>
-				</section>
 
 				<section>
 					<h3><img src="images/asg_logo.png" style="box-shadow:none; border:none; background:none" width="400"></h3>
